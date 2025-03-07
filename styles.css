@@ -182,6 +182,13 @@ section {
     margin-bottom: 8px;  /* 段落后间距6px */
 }
 
+/* 标题图标 */
+.main-content icon {
+    font-size: 18px;  /* 确保图标大小与文字匹配 */
+    margin-right: 8px; /* 右侧间距 */
+    color: #4CAF50; /* 统一颜色 */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
