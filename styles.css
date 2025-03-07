@@ -204,10 +204,12 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; /* 在小屏幕上，左侧栏和内容区域堆叠 */
+    }
     .sidebar {
-        width: 100%;
-        position: static;
-        height: auto;
+        height: auto; /* 左侧栏高度自适应 */
+        position: static; /* 取消固定定位 */
     }
 
     .main-content {
