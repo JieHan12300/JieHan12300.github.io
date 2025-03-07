@@ -216,21 +216,23 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
-        position: absolute; /* 相对于导航栏定位 */
-        top: 0; /* 放置在导航栏正下方 */
+        position: absolute;
+        top: 100%;
         left: 0;
-        width: auto; /* 适应内容宽度 */
+        width: 100%;
         height: auto;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         padding: 10px 15px;
-        background-color: white; /* 保持一致的背景色 */
-        border-bottom: 1px solid #ddd; /* 添加分隔线 */
+        background-color: white;
+        border-bottom: 1px solid #ddd;
     }
 
     .sidebar img {
-        width: 50px; /* 缩小头像 */
-        margin-right: 10px;
+        width: 50px;
+        border-radius: 50%;
+        margin-bottom: 5px;
     }
 
     .sidebar h1 {
@@ -239,25 +241,40 @@ section {
     }
 
     .sidebar p {
-        display: flex; /* 隐藏个人简介 */
+        font-size: 14px;
+        color: #666;
+        margin: 2px 0 10px;
+    }
+
+    .follow-btn {
+        background-color: #2D407D;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        padding: 5px 12px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .follow-btn:hover {
+        background-color: #1b2a5c;
     }
 
     .social-links {
+        display: none; /* 默认隐藏 */
+        margin-top: 10px;
+    }
+
+    .social-links.show {
         display: flex;
-        gap: 8px;
+        flex-direction: column;
     }
 
-    .social-links ol {
-        padding-left: 0;
-        display: flex;
-        gap: 8px;
-    }
-
-    .social-links li {
-        margin-bottom: 0;
-    }
-
-    .social-links a span {
-        display: none; /* 仅显示图标 */
+    .social-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        padding: 5px 0;
     }
 }
