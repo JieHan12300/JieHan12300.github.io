@@ -134,6 +134,7 @@ section {
 /* 右侧主要内容 */
 /* Main Content (Scrollable) */
 .main-content {
+    left: 220px;       /* 距离左侧 20px */
     flex-grow: 1; /* 占据剩余空间 */
     padding: 10px;  /* 缩小 padding */
     background-color: white;
