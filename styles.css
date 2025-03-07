@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 20px 15px;  /* 缩小 padding */
+    padding: 5px 5px;  /* 缩小 padding */
     margin: 0 auto;
     max-width: 800px;
 }
