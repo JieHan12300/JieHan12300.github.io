@@ -83,6 +83,14 @@ section {
     margin: 0 auto 10px; /* 居中 */
 }
 
+/* 限制图标大小 */
+.sidebar icon {
+    width: 5px;  /* 图片宽度 120px */
+    height: 5px;  /* 保持原始比例 */
+    display: block;
+}
+
+
 /* 个人简介 */
 .sidebar p {
     font-size: 14px;
