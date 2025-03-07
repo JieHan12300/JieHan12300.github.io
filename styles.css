@@ -70,13 +70,13 @@ section {
 
 .main-content h3 {
     color: #333;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 5px;  /* 减小标题与段落之间的间距 */
 }
 
 .main-content p {
-    font-size: 16px;
-    margin-bottom: 10px;  /* 缩小段落之间的间距 */
+    font-size: 18px;
+    margin-bottom: 5px;  /* 缩小段落之间的间距 */
 }
 
 .main-content ul {
