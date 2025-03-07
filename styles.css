@@ -88,6 +88,7 @@ section {
 
 /* 限制头像大小 */
 .sidebar img {
+    top: 100px;
     width: 120px;  /* 图片宽度 120px */
     height: auto;  /* 保持原始比例 */
     border-radius: 100%; /* 圆形头像 */
