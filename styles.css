@@ -216,31 +216,43 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
-        position: relative; /* 避免遮挡 */
+        position: relative; /* 确保不会遮挡其他内容 */
         width: 100%;
         padding: 10px 15px;
         background-color: white;
         border-bottom: 1px solid #ddd;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* 让内容水平对齐 */
+        justify-content: space-between; /* 让左右内容分开 */
+    }
+
+    .sidebar-content {
+        display: flex;
+        align-items: center;
     }
 
     .sidebar img {
         width: 50px;
         border-radius: 50%;
-        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .sidebar-text {
+        display: flex;
+        flex-direction: column;
     }
 
     .sidebar h1 {
         font-size: 16px;
         margin: 0;
+        text-align: left;
     }
 
     .sidebar p {
         font-size: 14px;
         color: #666;
-        margin: 2px 0 10px;
+        margin: 2px 0 0;
+        text-align: left;
     }
 
     .follow-btn {
@@ -252,7 +264,6 @@ section {
         font-size: 14px;
         cursor: pointer;
         transition: background 0.3s ease;
-        align-self: flex-start; /* 让按钮左对齐 */
     }
 
     .follow-btn:hover {
@@ -261,7 +272,13 @@ section {
 
     .social-links {
         display: none; /* 默认隐藏 */
-        margin-top: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 10px 15px;
+        border-top: 1px solid #ddd;
     }
 
     .social-links.show {
