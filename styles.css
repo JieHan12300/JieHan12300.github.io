@@ -83,20 +83,14 @@ section {
 }
 
 .main-content p {
-    font-size: 18px;
-    font-weight: bold;  /* 加粗 */
     margin-bottom: 8px;  /* 段落后间距6px */  
 }
 
 .main-content ul {
-    font-size: 18px;
-    font-weight: bold;  /* 加粗 */
     margin-bottom: 8px;  /* 段落后间距6px */
 }
 
 .main-content ul li {
-    font-size: 18px;
-    font-weight: bold;  /* 加粗 */
     margin-bottom: 8px;  /* 段落后间距6px */
 }
 
