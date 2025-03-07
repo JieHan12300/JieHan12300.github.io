@@ -21,6 +21,7 @@ a:hover {
 /* Header and Navigation */
 header {
     max-width: 1200px;
+    left: 220px;             /* 距离左侧 20px */
     background-color: white; /* 白色背景 */
     color: #808080;         /* 灰色文字 */
     padding: 15px 0;        /* 缩小 padding */
