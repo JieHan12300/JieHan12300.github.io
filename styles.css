@@ -64,9 +64,9 @@ section {
 /* 左侧固定侧边栏 */
 .sidebar {
     position: fixed;   /* 固定在左侧 */
-    top: 20px;        /* 距离顶部 20px */
-    left: 20px;       /* 距离左侧 20px */
-    width: 200px;     /* 左侧栏宽度 200px */
+    top: 100px;        /* 距离顶部 20px */
+    left: 50px;       /* 距离左侧 20px */
+    width: 220px;     /* 左侧栏宽度 200px */
     background-color: white;
     padding: 15px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
@@ -78,7 +78,7 @@ section {
 .sidebar img {
     width: 120px;  /* 图片宽度 120px */
     height: auto;  /* 保持原始比例 */
-    border-radius: 50%; /* 圆形头像 */
+    border-radius: 100%; /* 圆形头像 */
     display: block;
     margin: 0 auto 10px; /* 居中 */
 }
@@ -88,6 +88,12 @@ section {
     font-size: 16px;
     color: #333;
     margin-bottom: 10px;
+}
+.sidebar h1 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;  /* 加粗 */
+    margin-bottom: 6px;
 }
 
 /* 社交链接 */
