@@ -49,7 +49,7 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 10px 5px;  /* 缩小 padding */
+    padding: 5px 5px;  /* 缩小 padding */
     margin: 0 auto;
     max-width: 800px;
 }
@@ -103,7 +103,7 @@ section {
 
     .main-content {
         margin-left: 0;
-        padding: 10px;
+        padding: 5px;
     }
 
     .navbar {
