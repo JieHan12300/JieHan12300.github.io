@@ -20,13 +20,17 @@ a:hover {
 
 /* Header and Navigation */
 header {
-    background-color:  white;
-    color: #808080;
-    padding: 15px 0;  /* 缩小 padding */
-    text-align: center;
-    box-sizing: border-box;
-    position: sticky; /* 固定左侧栏 */
+    background-color: white; /* 白色背景 */
+    color: #808080;         /* 灰色文字 */
+    padding: 15px 0;        /* 缩小 padding */
+    text-align: center;     /* 文字居中 */
+    box-sizing: border-box; /* 确保 padding 不影响宽度 */
+    position: sticky;       /* 固定标题栏 */
+    top: 0;                /* 固定在页面顶部 */
+    z-index: 1000;         /* 确保标题栏在最上层 */
+    border-bottom: 1px solid #ddd; /* 添加底部边框 */
 }
+
 
 nav ul {
     list-style: none;
