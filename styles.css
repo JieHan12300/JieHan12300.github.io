@@ -10,8 +10,8 @@ body {
 
 
 a {
-    color: #4CAF50;
-    text-decoration: none;
+    color: #2D407D;
+    text-decoration: underline;
 }
 
 a:hover {
