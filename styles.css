@@ -8,7 +8,6 @@ body {
     color: #333;
 }
 
-
 a {
     color: #2D407D;
     text-decoration: underline;
@@ -31,17 +30,27 @@ header {
     border-bottom: 1px solid #ddd; /* 添加底部边框 */
 }
 
+/* 汉堡菜单样式 */
+.hamburger-menu {
+    display: none; /* 初始隐藏 */
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
 
+/* Navigation */
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* 让导航项换行 */
+    justify-content: center;
 }
 
-
 nav ul li {
-    display: inline;
-    margin: 0 10px;  /* 缩小横向间距 */
+    display: inline-block;
+    margin: 0 10px;
 }
 
 /* 增加 Homepage 和 About Me 之间的横向间距 */
@@ -53,7 +62,6 @@ nav ul li:first-child {
 nav ul li:first-child a {
     font-weight: bold;
 }
-
 
 nav ul li a {
     font-size: 18px !important; 
@@ -79,154 +87,177 @@ section {
     margin: 0 auto;
 }
 
-
+/* Sidebar */
 .sidebar {
-    background-color: white; /* 深蓝色背景 */
+    background-color: white;
     color: white;
     padding: 15px;
     box-sizing: border-box;
-    position: sticky; /* 固定左侧栏 */
+    position: sticky;
     top: 0;
-    width: 250px;  /* 图片宽度 120px */ 
-    height: 100vh; /* 左侧栏高度占满整个视口 */
-    overflow-y: auto; /* 如果内容过多，允许滚动 */
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 /* 限制头像大小 */
 .sidebar img {
-    width: 120px;  /* 图片宽度 120px */
-    height: auto;  /* 保持原始比例 */
-    border-radius: 100%; /* 圆形头像 */
+    width: 120px;
+    height: auto;
+    border-radius: 100%;
     display: block;
-    margin: 50px auto 10px; /* 距离顶端 100px，水平居中，下方留 10px 间距 */
+    margin: 50px auto 10px;
 }
 
 /* 限制图标大小 */
 .sidebar icon {
-    width: 5px;  /* 图片宽度 120px */
-    height: 5px;  /* 保持原始比例 */
+    width: 5px;
+    height: 5px;
     display: block;
 }
-
 
 /* 个人简介 */
 .sidebar p {
     font-size: 14px;
     color: #333;
     margin-bottom: 10px;
-    text-align: center; /* 全局文字左对齐 */
+    text-align: center;
 }
+
 .sidebar h1 {
     font-size: 18px;
     color: #333;
-    font-weight: bold;  /* 加粗 */
+    font-weight: bold;
     margin-bottom: 6px;
-    text-align: center; /* 全局文字左对齐 */
+    text-align: center;
 }
 
-        /* 社交链接 */
-        .social-links ol {
-            list-style-position: outside; /* 数字对齐 */
-            padding-left: 20px;
-            margin: 0;
-        }
+/* 社交链接 */
+.social-links ol {
+    list-style-position: outside;
+    padding-left: 20px;
+    margin: 0;
+}
 
-        .social-links li {
-            display: flex;
-            align-items: center; /* 垂直居中对齐 */
-            margin-bottom: 8px; /* 每个链接之间的间距 */
-            font-size: 14px;
-        }
+.social-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
 
-        .social-links a {
-            display: flex;
-            align-items: center;
-            color: #808080; /* 设为灰色 */
-            text-decoration: none;
-            width: 100%; /* 让链接占满整个 li 的宽度 */
-            transition: color 0.3s ease; /* 过渡效果 */
-        }
+.social-links a {
+    display: flex;
+    align-items: center;
+    color: #808080;
+    text-decoration: none;
+    width: 100%;
+    transition: color 0.3s ease;
+}
 
-        .social-links a:hover {
-            color: #0077b5; /* 鼠标悬停时的颜色 */
-        }
+.social-links a:hover {
+    color: #0077b5;
+}
 
-        .social-links a i {
-            margin-right: 8px; /* 图标和文字之间的间距 */
-            font-size: 14px;
-            width: 20px; /* 固定图标宽度，确保对齐 */
-            text-align: center; /* 图标居中 */
-        }
+.social-links a i {
+    margin-right: 8px;
+    font-size: 14px;
+    width: 20px;
+    text-align: center;
+}
 
-        .social-links a span {
-            flex-grow: 1; /* 让文字占满剩余空间 */
-        }
-
+.social-links a span {
+    flex-grow: 1;
+}
 
 /* 右侧主要内容 */
-/* Main Content (Scrollable) */
 .main-content {
-    left: 220px;       /* 距离左侧 20px */
-    flex-grow: 1; /* 占据剩余空间 */
-    padding: 10px;  /* 缩小 padding */
+    left: 220px;
+    flex-grow: 1;
+    padding: 10px;
     background-color: white;
-    box-sizing: border-box; /* 确保 padding 不会影响宽度 */
+    box-sizing: border-box;
 }
 
 .main-content p, 
 .main-content ul, 
 .main-content ul li {
-    text-align: justify; /* 确保列表和段落都对齐 */
-    font-size: 16px !important; /* 强制字体大小 */
+    text-align: justify;
+    font-size: 16px !important;
 }
 
 .main-content h2 {
     color: #333;
     font-size: 18px;
-    margin-bottom: 8px;  /* 减小标题与段落之间的间距 */
-    border-bottom: 1px solid #ddd; /* 添加底部边框 */
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
 }
 
 .main-content h3 {
     color: #333;
     font-size: 16px;
-    margin-bottom: 6px;  /* 减小标题与段落之间的间距 */
+    margin-bottom: 6px;
 }
 
 .main-content p {
-    margin-bottom: 8px;  /* 段落后间距6px */  
+    margin-bottom: 8px;
 }
 
 .main-content ul {
-    margin-bottom: 8px;  /* 段落后间距6px */
+    margin-bottom: 8px;
 }
 
 .main-content ul li {
-    margin-bottom: 8px;  /* 段落后间距6px */
+    margin-bottom: 8px;
 }
 
-/* 标题图标 */
 .main-content icon {
-    font-size: 20px;  /* 确保图标大小与文字匹配 */
-    margin-right: 8px; /* 右侧间距 */
-    color: inherit;  /* 让图标保留原始颜色 */
+    font-size: 20px;
+    margin-right: 8px;
+    color: inherit;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* 让内容垂直排列 */
+        flex-direction: column;
     }
 
     .sidebar {
-        width: 100%; /* 让左侧栏占满整个宽度 */
-        position: relative; /* 取消固定 */
-        height: auto; /* 适应内容高度 */
-        border-bottom: 1px solid #ddd; /* 添加分隔线 */
+        width: 100%;
+        position: relative;
+        height: auto;
+        border-bottom: 1px solid #ddd;
     }
 
     .main-content {
-        left: 0; /* 取消左侧偏移 */
-        width: 100%; /* 让主要内容区占满屏幕 */
+        left: 0;
+        width: 100%;
+    }
+
+    /* 在小屏幕下隐藏导航项 */
+    nav ul {
+        display: none; /* 默认隐藏所有导航项 */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 显示汉堡菜单 */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* 当点击后显示导航项 */
+    nav.active ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li:first-child {
+        margin-right: 0;
     }
 }
