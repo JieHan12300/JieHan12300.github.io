@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
 }
@@ -21,7 +21,7 @@ a:hover {
 header {
     background-color:  white;
     color: #808080;
-    padding: 20px 0;
+    padding: 15px 0;  /* 缩小 padding */
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 10px;  /* 缩小横向间距 */
 }
 
 nav ul li a {
@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 40px 20px;
+    padding: 20px 15px;  /* 缩小 padding */
     margin: 0 auto;
     max-width: 800px;
 }
@@ -56,7 +56,7 @@ section {
 /* Main Content (Scrollable) */
 .main-content {
     margin-left: 250px;  /* 减小左侧边距 */
-    padding: 10px;  /* 缩小 padding */
+    padding: 30px;  /* 缩小 padding */
     flex-grow: 1;
     background-color: white;
     box-sizing: border-box; /* 确保 padding 不会影响宽度 */
@@ -64,32 +64,27 @@ section {
 
 .main-content h2 {
     color: #333;
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 8px;  /* 减小标题与段落之间的间距 */
 }
 
 .main-content h3 {
     color: #333;
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 5px;  /* 减小标题与段落之间的间距 */
 }
 
 .main-content p {
-    font-size: 18px;
-    font-weight: bold; /* 加粗文字 */
-    margin-bottom: 6px;  /* 缩小段落之间的间距 */
+    font-size: 16px;
+    margin-bottom: 10px;  /* 缩小段落之间的间距 */
 }
 
 .main-content ul {
-    font-size: 18px;
-    font-weight: bold; /* 加粗文字 */
-    margin-bottom: 6px; /* 段落后间距6磅 */
+    margin-bottom: 8px;  /* 减少列表与下一个部分之间的间距 */
 }
 
 .main-content ul li {
-    font-size: 18px;
-    font-weight: bold; /* 加粗文字 */
-    margin-bottom: 6px; /* 段落后间距6磅 */
+    margin-bottom: 4px;  /* 缩小列表项之间的间距 */
 }
 
 /* Responsive Design */
@@ -102,7 +97,7 @@ section {
 
     .main-content {
         margin-left: 0;
-        padding: 10px;
+        padding: 20px;
     }
 
     .navbar {
