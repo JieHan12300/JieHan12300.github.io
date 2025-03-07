@@ -105,7 +105,6 @@ section {
 
 .social-links li {
     display: flex;
-    align-items: center;
     margin-bottom: 8px; /* 每个链接之间的间距 */
     font-size: 14px;
 }
