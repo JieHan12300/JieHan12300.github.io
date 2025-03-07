@@ -111,12 +111,14 @@ section {
     font-size: 14px;
     color: #333;
     margin-bottom: 10px;
+    text-align: center; /* 全局文字左对齐 */
 }
 .sidebar h1 {
     font-size: 18px;
     color: #333;
     font-weight: bold;  /* 加粗 */
     margin-bottom: 6px;
+    text-align: center; /* 全局文字左对齐 */
 }
 
         /* 社交链接 */
