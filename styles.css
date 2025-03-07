@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,10 +8,20 @@ body {
     color: #333;
 }
 
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -36,16 +46,38 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Sections */
 section {
     padding: 40px 20px;
     margin: 0 auto;
     max-width: 800px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #4CAF50;
 }
 
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Card Layout for Publications and Projects */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -55,11 +87,34 @@ h1, h2 {
 .card {
     flex: 1 1 calc(33.333% - 40px);
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.card a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
     background-color: #333;
     color: white;
@@ -81,5 +136,17 @@ footer a {
 
     .card {
         flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
     }
 }
