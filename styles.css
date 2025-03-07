@@ -73,17 +73,16 @@ section {
     margin: 0 auto;
 }
 
-/* 左侧固定侧边栏 */
+
 .sidebar {
-    position: fixed;   /* 固定在左侧 */
-    top: 100px;        /* 距离顶部 20px */
-    left: 50px;       /* 距离左侧 20px */
-    width: 220px;     /* 左侧栏宽度 200px */
-    background-color: white;
+    background-color: #2c3e50; /* 深蓝色背景 */
+    color: white;
     padding: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
-    border-radius: 8px;
-    text-align: center; /* 文字居中 */
+    box-sizing: border-box;
+    position: sticky; /* 固定左侧栏 */
+    top: 100px;
+    height: 100vh; /* 左侧栏高度占满整个视口 */
+    overflow-y: auto; /* 如果内容过多，允许滚动 */
 }
 
 /* 限制头像大小 */
