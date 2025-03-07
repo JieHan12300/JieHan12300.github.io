@@ -1,91 +1,84 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
+    line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Top Navigation Bar */
-.navbar {
-    background-color: #4CAF50; /* 绿色背景 */
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar a {
-    color: white;
+a {
+    color: #4CAF50;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
+header {
+    background-color:  white;
+    color: #808080;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
     margin: 0 15px;
+}
+
+nav ul li a {
+    color: #808080;
+    text-decoration: none;
     font-weight: bold;
 }
 
-.navbar a:hover {
+nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Left Sidebar (Fixed) */
-.sidebar {
-    width: 300px; /* 左侧栏宽度 */
-    background-color: #2c3e50; /* 深蓝色背景 */
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    position: fixed;
-    height: 100vh; /* 全高 */
-    overflow-y: auto; /* 如果内容过多，允许滚动 */
-    left: 0; /* 固定在左侧 */
-    top: 0; /* 从顶部开始 */
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-.sidebar img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* 圆形照片 */
-    display: block;
-    margin: 0 auto 20px; /* 居中显示 */
+h1, h2, h3, p {
+    color: #333;
 }
 
-.sidebar h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.sidebar h2 {
-    font-size: 18px;
+h1 {
+    font-size: 28px;
     margin-bottom: 15px;
-    text-align: center;
+
 }
 
-.sidebar p {
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.sidebar .contact {
-    margin-top: 20px;
-}
-
-.sidebar .contact a {
-    color: white;
-    text-decoration: none;
-    display: block;
+h2 {
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
-.sidebar .contact a:hover {
-    text-decoration: underline;
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
+
+p {
+    font-size: 18px;
+    text-indent: 20px; /* 第一行向左缩进 */
+    padding-left: 20px;  /* 整个段落向右缩进 */
+}
+
 
 /* Main Content (Scrollable) */
 .main-content {
