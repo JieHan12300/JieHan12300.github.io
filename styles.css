@@ -32,17 +32,23 @@ nav ul {
     padding: 0;
 }
 
-nav ul ih {
-    display: inline;
-    margin: 0 20px;  /* 缩小横向间距 */
-    font-size: 18px !important; 
-    font-weight: bold;  /* 加粗 */
-}
 
 nav ul li {
     display: inline;
     margin: 0 10px;  /* 缩小横向间距 */
 }
+
+/* 增加 Homepage 和 About Me 之间的横向间距 */
+nav ul li:first-child {
+    margin-right: 20px; /* 仅调整 Homepage 和 About Me 之间的间距 */
+}
+
+/* 加粗 Homepage */
+nav ul li:first-child a {
+    
+    font-weight: bold;
+}
+
 
 nav ul li a {
     font-size: 18px !important; 
