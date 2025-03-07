@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
@@ -43,6 +42,8 @@ body {
     position: fixed;
     height: 100vh; /* 全高 */
     overflow-y: auto; /* 如果内容过多，允许滚动 */
+    left: 0; /* 固定在左侧 */
+    top: 0; /* 从顶部开始 */
 }
 
 .sidebar img {
@@ -92,6 +93,7 @@ body {
     padding: 40px;
     flex-grow: 1;
     background-color: white;
+    box-sizing: border-box; /* 确保 padding 不会影响宽度 */
 }
 
 .main-content h2 {
