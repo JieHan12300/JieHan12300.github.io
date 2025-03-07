@@ -67,6 +67,7 @@ section {
 .main-content p, 
 .main-content ul, 
 .main-content ul li {
+    color: #494E52;
     font-size: 16px !important; /* 强制字体大小 */
 }
 
