@@ -214,47 +214,9 @@ section {
 
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-        height: auto;
-        position: static;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .sidebar img {
-        margin: 10px auto;
-    }
-
-    .main-content {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .navbar ul li:first-child {
-        margin-right: 0;
-    }
-
-    h1, h2, h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
+        margin: 5px 0; /* 调整导航链接间距 */
     }
 }
