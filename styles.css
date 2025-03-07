@@ -32,6 +32,13 @@ nav ul {
     padding: 0;
 }
 
+nav ul ih {
+    display: inline;
+    margin: 0 20px;  /* 缩小横向间距 */
+    font-size: 18px !important; 
+    font-weight: bold;  /* 加粗 */
+}
+
 nav ul li {
     display: inline;
     margin: 0 10px;  /* 缩小横向间距 */
