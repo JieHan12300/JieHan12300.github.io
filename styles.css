@@ -83,6 +83,22 @@ section {
     margin-top: 10px;
 }
 
+.social-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-links a {
+    font-size: 24px;  /* 图标大小 */
+    margin: 0 10px;  /* 调整图标之间的间距 */
+    color: #4CAF50;  /* 绿色图标 */
+}
+
+.social-links a:hover {
+    color: #0077b5;  /* 鼠标悬停时变蓝 */
+}
+
+
 /* 右侧主要内容 */
 /* Main Content (Scrollable) */
 .main-content {
