@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.5;
     background-color: #f9f9f9;
     color: #333;
 }
@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-    padding: 20px 15px;  /* 缩小 padding */
+    padding: 10px 5px;  /* 缩小 padding */
     margin: 0 auto;
     max-width: 800px;
 }
@@ -64,27 +64,32 @@ section {
 
 .main-content h2 {
     color: #333;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 8px;  /* 减小标题与段落之间的间距 */
 }
 
 .main-content h3 {
     color: #333;
-    font-size: 22px;
-    margin-bottom: 5px;  /* 减小标题与段落之间的间距 */
+    font-size: 18px;
+    margin-bottom: 8px;  /* 减小标题与段落之间的间距 */
 }
 
 .main-content p {
-    font-size: 16px;
-    margin-bottom: 10px;  /* 缩小段落之间的间距 */
+    font-size: 18px;
+    font-weight: bold;  /* 加粗 */
+    margin-bottom: 8px;  /* 段落后间距6px */  
 }
 
 .main-content ul {
-    margin-bottom: 8px;  /* 减少列表与下一个部分之间的间距 */
+    font-size: 18px;
+    font-weight: bold;  /* 加粗 */
+    margin-bottom: 8px;  /* 段落后间距6px */
 }
 
 .main-content ul li {
-    margin-bottom: 4px;  /* 缩小列表项之间的间距 */
+    font-size: 18px;
+    font-weight: bold;  /* 加粗 */
+    margin-bottom: 8px;  /* 段落后间距6px */
 }
 
 /* Responsive Design */
