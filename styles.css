@@ -36,6 +36,8 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -64,6 +66,40 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+/* 更多菜单样式 */
+.more-menu {
+    position: relative;
+    display: none; /* 默认隐藏 */
+}
+
+.more-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.more-menu .dropdown li {
+    margin: 0;
+    padding: 10px;
+    white-space: nowrap; /* 防止文字换行 */
+}
+
+.more-menu .dropdown li a {
+    font-size: 16px;
+    color: #333;
+}
+
+/* 显示更多菜单 */
+.more-menu:hover .dropdown {
+    display: block;
+}
+
 
 /* Sections */
 section {
