@@ -85,24 +85,36 @@ section {
 
 .social-links {
     margin-top: 15px;
-    text-align: left;  /* 让文本左对齐 */
+    text-align: left;  /* 文本左对齐 */
+}
+
+.social-links ol {
+    list-style-position: outside;  /* 数字排列在外部 */
+    padding-left: 20px;  /* 给数字腾出空间 */
+    margin: 0;
+}
+
+.social-links li {
+    display: flex;  /* 使用 flexbox 让图标、文字、数字对齐 */
+    align-items: center;  /* 垂直居中 */
+    margin-bottom: 5px;  /* 每个链接之间的间距 */
+    font-size: 16px;  /* 文字大小 */
 }
 
 .social-links a {
-    display: block;  /* 让链接换行，竖向排列 */
-    font-size: 18px;  /* 文字大小 */
-    margin: 8px 0;  /* 上下间距 */
-    color: #4CAF50;  /* 默认绿色 */
+    display: flex;  /* 让图标和文字在同一行 */
+    align-items: center;
+    color: #4CAF50;  /* 文字颜色 */
     text-decoration: none; /* 去掉下划线 */
 }
 
-.social-links a i {
-    margin-right: 8px;  /* 图标和文字间距 */
-    font-size: 20px;  /* 图标大小 */
+.social-links a:hover {
+    color: #0077b5;  /* 悬停变蓝 */
 }
 
-.social-links a:hover {
-    color: #0077b5;  /* 悬停时变蓝 */
+.social-links a i {
+    margin-right: 8px;  /* 图标与文字之间的间距 */
+    font-size: 18px;  /* 图标大小 */
 }
 
 
