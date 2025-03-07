@@ -98,7 +98,7 @@ section {
     height: auto;  /* 保持原始比例 */
     border-radius: 100%; /* 圆形头像 */
     display: block;
-    margin: 100px auto 10px; /* 距离顶端 100px，水平居中，下方留 10px 间距 */
+    margin: 50px auto 10px; /* 距离顶端 100px，水平居中，下方留 10px 间距 */
 }
 
 /* 限制图标大小 */
