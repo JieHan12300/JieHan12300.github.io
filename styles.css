@@ -216,17 +216,14 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
-        position: absolute;
-        top: 100%;
-        left: 0;
+        position: relative; /* 避免遮挡 */
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         padding: 10px 15px;
         background-color: white;
         border-bottom: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .sidebar img {
@@ -255,6 +252,7 @@ section {
         font-size: 14px;
         cursor: pointer;
         transition: background 0.3s ease;
+        align-self: flex-start; /* 让按钮左对齐 */
     }
 
     .follow-btn:hover {
