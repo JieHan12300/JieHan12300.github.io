@@ -216,23 +216,26 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .sidebar {
-        position: relative; /* 取消固定位置 */
-        width: 100%; /* 占满屏幕宽度 */
-        height: auto; /* 自适应高度 */
+        position: absolute; /* 相对于导航栏定位 */
+        top: 100%; /* 放置在导航栏正下方 */
+        left: 0;
+        width: auto; /* 适应内容宽度 */
+        height: auto;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 10px 0;
+        padding: 10px 15px;
+        background-color: white; /* 保持一致的背景色 */
         border-bottom: 1px solid #ddd; /* 添加分隔线 */
     }
 
     .sidebar img {
-        width: 80px; /* 缩小头像 */
-        margin: 10px 0;
+        width: 50px; /* 缩小头像 */
+        margin-right: 10px;
     }
 
     .sidebar h1 {
         font-size: 16px;
+        margin: 0;
     }
 
     .sidebar p {
@@ -241,14 +244,13 @@ section {
 
     .social-links {
         display: flex;
-        gap: 10px;
-        justify-content: center;
+        gap: 8px;
     }
 
     .social-links ol {
         padding-left: 0;
         display: flex;
-        gap: 10px;
+        gap: 8px;
     }
 
     .social-links li {
@@ -256,7 +258,6 @@ section {
     }
 
     .social-links a span {
-        display: none; /* 仅显示图标，隐藏文本 */
+        display: none; /* 仅显示图标 */
     }
 }
-
