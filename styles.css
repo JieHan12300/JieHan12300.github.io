@@ -40,7 +40,7 @@ nav ul li {
 
 /* 增加 Homepage 和 About Me 之间的横向间距 */
 nav ul li:first-child {
-    margin-right: 40px; /* 仅调整 Homepage 和 About Me 之间的间距 */
+    margin-right: 60px; /* 仅调整 Homepage 和 About Me 之间的间距 */
 }
 
 /* 加粗 Homepage */
