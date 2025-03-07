@@ -214,7 +214,6 @@ section {
 
 
 /* Responsive Design */
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul li {
         margin: 5px 0; /* 调整导航链接间距 */
