@@ -101,7 +101,7 @@ section {
     list-style-position: outside; /* 数字对齐 */
     padding-left: 20px;
     margin: 0;
-    text-align: left; /* 文字左对齐 */
+    text-align: center; /* 文字左对齐 */
 }
 
 .social-links li {
@@ -114,7 +114,7 @@ section {
 .social-links a {
     display: flex;
     align-items: center;
-    color: #4CAF50;
+    color: #808080; /* 设为灰色 */
     text-decoration: none;
 }
 
@@ -123,6 +123,7 @@ section {
 }
 
 .social-links a i {
+    text-align: left; /* 文字左对齐 */
     margin-right: 8px;
     font-size: 18px;
 }
