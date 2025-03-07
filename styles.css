@@ -86,7 +86,7 @@ section {
     padding: 15px;
     box-sizing: border-box;
     position: sticky; /* 固定左侧栏 */
-    top: 100px;
+    top: 0;
     width: 250px;  /* 图片宽度 120px */ 
     height: 100vh; /* 左侧栏高度占满整个视口 */
     overflow-y: auto; /* 如果内容过多，允许滚动 */
@@ -94,12 +94,11 @@ section {
 
 /* 限制头像大小 */
 .sidebar img {
-    top: 150px;
     width: 120px;  /* 图片宽度 120px */
     height: auto;  /* 保持原始比例 */
     border-radius: 100%; /* 圆形头像 */
     display: block;
-    margin: 0 auto 10px; /* 居中 */
+    margin: 100px auto 10px; /* 距离顶端 100px，水平居中，下方留 10px 间距 */
 }
 
 /* 限制图标大小 */
