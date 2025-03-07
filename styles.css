@@ -86,7 +86,7 @@ section {
     padding: 15px;
     box-sizing: border-box;
     position: sticky; /* 固定左侧栏 */
-    top: 0;
+    top: 100px;
     width: 250px;  /* 图片宽度 120px */ 
     height: 100vh; /* 左侧栏高度占满整个视口 */
     overflow-y: auto; /* 如果内容过多，允许滚动 */
