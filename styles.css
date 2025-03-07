@@ -24,6 +24,8 @@ header {
     color: #808080;
     padding: 15px 0;  /* 缩小 padding */
     text-align: center;
+    box-sizing: border-box;
+    position: sticky; /* 固定左侧栏 */
 }
 
 nav ul {
