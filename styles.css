@@ -212,23 +212,49 @@ section {
     color: inherit;  /* 让图标保留原始颜色 */
 }
 
+
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        grid-template-columns: 1fr; /* 在小屏幕上，左侧栏和内容区域堆叠 */
+        grid-template-columns: 1fr;
     }
+
     .sidebar {
-        height: auto; /* 左侧栏高度自适应 */
-        position: static; /* 取消固定定位 */
+        height: auto;
+        position: static;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sidebar img {
+        margin: 10px auto;
     }
 
     .main-content {
         margin-left: 0;
-        padding: 5px;
+        padding: 10px;
     }
 
     .navbar {
         flex-direction: column;
         align-items: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar ul li:first-child {
+        margin-right: 0;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
