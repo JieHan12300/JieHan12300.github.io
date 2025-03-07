@@ -25,26 +25,6 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;  /* 缩小横向间距 */
-}
-
-nav ul li a {
-    color: #808080;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
 
 /* Sections */
 section {
@@ -75,7 +55,7 @@ section {
 }
 
 .main-content p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;  /* 缩小段落之间的间距 */
 }
 
