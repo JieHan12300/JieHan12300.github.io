@@ -18,48 +18,39 @@ a:hover {
 }
 
 /* Header and Navigation */
-header {
-    background-color: white;
-    color: #808080;
-    padding: 15px 0;
-    text-align: center;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #ddd;
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-nav ul {
+/* Header and Navigation */
+.navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* 允许换行 */
-    justify-content: center; /* 导航项居中 */
+    flex-wrap: nowrap; /* 禁止换行 */
+    justify-content: flex-start; /* 左对齐 */
+    overflow-x: auto; /* 允许水平滚动 */
 }
 
-nav ul li {
+.navbar ul li {
     margin: 0 10px;
+    white-space: nowrap; /* 防止文字换行 */
 }
 
-/* 增加 Homepage 和 About Me 之间的横向间距 */
-nav ul li:first-child {
-    margin-right: 60px;
-}
-
-/* 加粗 Homepage */
-nav ul li:first-child a {
-    font-weight: bold;
-}
-
-nav ul li a {
-    font-size: 18px !important;
+.navbar ul li a {
+    font-size: 18px;
     color: #808080;
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.navbar ul li a:hover {
     text-decoration: underline;
 }
 
