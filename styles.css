@@ -85,7 +85,7 @@ section {
     color: white;
     padding: 15px;
     box-sizing: border-box;
-    position: sticky; /* 固定左侧栏 */
+    position: fixed; /* 固定左侧栏 */
     top: 0;
     width: 250px;  /* 图片宽度 120px */ 
     height: 100vh; /* 左侧栏高度占满整个视口 */
