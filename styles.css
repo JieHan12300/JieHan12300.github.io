@@ -229,4 +229,17 @@ section {
         left: 0; /* 取消左侧偏移 */
         width: 100%; /* 让主要内容区占满屏幕 */
     }
+        .social-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 列布局 */
+        gap: 10px; /* 设置间距 */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-links a {
+        text-align: center; /* 居中文本 */
+        padding: 10px;
+        font-size: 14px;
+    }
 }
