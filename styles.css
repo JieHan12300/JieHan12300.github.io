@@ -214,21 +214,19 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        grid-template-columns: 1fr; /* 在小屏幕上，左侧栏和内容区域堆叠 */
+    .container {
+        flex-direction: column; /* 让内容垂直排列 */
     }
+
     .sidebar {
-        height: auto; /* 左侧栏高度自适应 */
-        position: static; /* 取消固定定位 */
+        width: 100%; /* 让左侧栏占满整个宽度 */
+        position: relative; /* 取消固定 */
+        height: auto; /* 适应内容高度 */
+        border-bottom: 1px solid #ddd; /* 添加分隔线 */
     }
 
     .main-content {
-        margin-left: 0;
-        padding: 5px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
+        left: 0; /* 取消左侧偏移 */
+        width: 100%; /* 让主要内容区占满屏幕 */
     }
 }
