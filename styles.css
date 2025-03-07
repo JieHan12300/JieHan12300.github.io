@@ -56,7 +56,7 @@ section {
 /* Main Content (Scrollable) */
 .main-content {
     margin-left: 250px;  /* 减小左侧边距 */
-    padding: 30px;  /* 缩小 padding */
+    padding: 10px;  /* 缩小 padding */
     flex-grow: 1;
     background-color: white;
     box-sizing: border-box; /* 确保 padding 不会影响宽度 */
@@ -97,7 +97,7 @@ section {
 
     .main-content {
         margin-left: 0;
-        padding: 20px;
+        padding: 10px;
     }
 
     .navbar {
