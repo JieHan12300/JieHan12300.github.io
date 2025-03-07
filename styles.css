@@ -84,7 +84,8 @@ section {
 }
 
 .main-content ul li {
-    margin-bottom: 4px;  /* 缩小列表项之间的间距 */
+    margin-bottom: 6px;  /* 缩小列表项之间的间距 */
+    line-height: 1.25;
 }
 
 /* Responsive Design */
