@@ -85,18 +85,26 @@ section {
 
 .social-links {
     margin-top: 15px;
-    text-align: center;
+    text-align: left;  /* 让文本左对齐 */
 }
 
 .social-links a {
-    font-size: 24px;  /* 图标大小 */
-    margin: 0 10px;  /* 调整图标之间的间距 */
-    color: #4CAF50;  /* 绿色图标 */
+    display: block;  /* 让链接换行，竖向排列 */
+    font-size: 18px;  /* 文字大小 */
+    margin: 8px 0;  /* 上下间距 */
+    color: #4CAF50;  /* 默认绿色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+.social-links a i {
+    margin-right: 8px;  /* 图标和文字间距 */
+    font-size: 20px;  /* 图标大小 */
 }
 
 .social-links a:hover {
-    color: #0077b5;  /* 鼠标悬停时变蓝 */
+    color: #0077b5;  /* 悬停时变蓝 */
 }
+
 
 
 /* 右侧主要内容 */
