@@ -127,7 +127,10 @@ section {
     font-size: 14px;
 }
 
-
+.social-links a span {
+    text-align: left; /* 文字左对齐 */
+    flex-grow: 1; /* 让文字占满剩余空间 */
+}
 
 
 
