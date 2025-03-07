@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 22px !important; 
+    font-size: 20px !important; 
     color: #808080;
     text-decoration: none;
     font-weight: bold;
@@ -151,7 +151,7 @@ section {
 
 .main-content h2 {
     color: #333;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 8px;  /* 减小标题与段落之间的间距 */
 }
 
