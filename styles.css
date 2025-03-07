@@ -184,9 +184,9 @@ section {
 
 /* 标题图标 */
 .main-content icon {
-    font-size: 18px;  /* 确保图标大小与文字匹配 */
+    font-size: 20px;  /* 确保图标大小与文字匹配 */
     margin-right: 8px; /* 右侧间距 */
-    color: #4CAF50; /* 统一颜色 */
+    color: inherit;  /* 让图标保留原始颜色 */
 }
 
 /* Responsive Design */
