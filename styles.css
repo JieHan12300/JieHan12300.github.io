@@ -31,6 +31,87 @@ header {
     border-bottom: 1px solid #ddd; /* 添加底部边框 */
 }
 
+/* 让导航栏水平排列 */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    position: relative; /* 用于定位下拉菜单 */
+}
+
+/* 导航栏容器 */
+.nav-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden; /* 超出部分隐藏 */
+}
+
+/* 导航链接样式 */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* 避免换行 */
+    overflow: hidden;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    display: block;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* 汉堡菜单按钮（默认隐藏） */
+.hamburger-menu {
+    display: none; /* 仅在小屏幕下可见 */
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* 下拉菜单样式 */
+.dropdown-menu {
+    display: none; /* 默认隐藏 */
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    min-width: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 激活时显示下拉菜单 */
+.dropdown-menu.active {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
 
 nav ul {
     list-style: none;
@@ -214,6 +295,11 @@ section {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    
     .container {
         flex-direction: column; /* 让内容垂直排列 */
     }
