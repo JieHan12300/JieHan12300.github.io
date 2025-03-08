@@ -212,27 +212,6 @@ section {
     color: inherit;  /* 让图标保留原始颜色 */
 }
 
-.journal-list {
-    list-style-type: none;  /* 隐藏默认编号 */
-    counter-reset: journal-counter;  /* 初始化计数器 */
-}
-
-.journal-list li {
-    counter-increment: journal-counter;  /* 递增计数器 */
-    position: relative;
-    padding-left: 3em;  /* 留出左侧空间放编号 */
-}
-
-.journal-list li::before {
-    content: "J" counter(journal-counter) ". ";  /* 生成 J1, J2, J3... */
-    font-weight: bold;
-    position: absolute;
-    left: 0;
-}
-
-
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
